@@ -2,8 +2,45 @@
     margin: 0;
 }
 
-.box{
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h3{
+    color: white;
+}
+
+.space{
+    height: 2rem;
+}
+
+.green-box{
     height: 5rem;
     width: 5rem;
-    background-color: black;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.blue-box{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.pink-box{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.purple-box{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: purple;
 }
