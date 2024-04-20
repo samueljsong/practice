@@ -27,6 +27,9 @@ section{
 }
 
 /* In parallax, the bottom is always faded out. This is how you do it */
+/* We are creating something to come out before the section elements
+    and we set it to the bottom of the screen with bottom: 0
+    we use linear gradient to create a mask that will cover the content */
 section::before{
     content: '';
     position: absolute;

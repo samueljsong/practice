@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Ailerion;
+    src: url(../font/Ailerons.woff2) format(woff2) ;
+}
+
+*{
+    margin: 0;
+    font-family: Ailerion;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero > h1{
+    font-size: 20rem;
+    color: #73433a;
+    font-weight: 100;
+    z-index: 3;
+    letter-spacing: 1rem;
+}
+
+.hero > h2{
+    font-size: 5rem;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 1rem;
+    z-index: 3;
+}
+
+#mask{
+    height: 100%;
+    width: 100%;
+    background-color: #282827;
+    position: absolute;
+}
+
+#bg1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
