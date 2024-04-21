@@ -5,13 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plane</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header class="hero">
         <div id="mask"></div>
         <h1>AILERION</h1>
         <h2>INSPIRED BY AIRCRAFT</h2>
-        
+    
     </header>
+
+    <main>
+        <article id="concept">
+            <section id="information">
+                <div id="information-text">
+                    <p>VERSION 2.0</p>
+                    <h3>CONCEPT</h3>
+                    <p>AILERONS TYPEFACE WAS INSPIRED BY AIRCRAFT MODELS FROM THE 40s.</p>
+                    <p>THE TYPE FACE WAS DESIGNED FOR AN EXPERIMENTAL PROJECT OF AIRMODELS AND NOW IS AVAILABLE FOR PERSONAL USE.</p>
+                </div>
+                <div id="image-container">
+                    <img id="pj" src="../img/pj.png" alt="">
+                </div>
+            </section>
+        </article>
+        <article id="showcase">
+            <div id="showcase-text">
+                <h3>it is nice for titles</h3>
+                <p id="extra-text">its numbers are clean and stylish</p>
+                <p id="date-text">04.21.2015</p>
+                <span class="space"></span>
+                <span class="line"></span>
+                <span class="space"></span>
+                <p id="contact">for commercial license contact me.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+
+        gsap.to("#pj", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 270,
+            opacity : 1
+        })
+    </script>
 </body>
 </html>

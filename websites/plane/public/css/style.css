@@ -8,6 +8,13 @@
     font-family: Ailerion;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
 .hero{
     height: 100vh;
     width: 100%;
@@ -15,29 +22,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #282827;
 }
 
 .hero > h1{
-    font-size: 20rem;
-    color: #73433a;
+    font-size: 10rem;
+    color: #fff;
     font-weight: 100;
     z-index: 3;
     letter-spacing: 1rem;
 }
 
 .hero > h2{
-    font-size: 5rem;
+    font-size: 2.7rem;
     font-weight: 100;
-    color: #fff;
+    color: #73433b;
     letter-spacing: 1rem;
     z-index: 3;
-}
-
-#mask{
-    height: 100%;
-    width: 100%;
-    background-color: #282827;
-    position: absolute;
 }
 
 #bg1{
@@ -45,4 +46,114 @@
     width: 100%;
     position: absolute;
     z-index: -1;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#concept{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #242423;
+}
+
+#information{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#information-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+#information-text > p{
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: #979797;
+}
+
+#information-text > h3{
+    font-size: 4rem;
+    font-weight: 100;
+    color: #73433b;
+}
+
+#image-container{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+}
+
+#pj{
+    width: 50rem;
+    position: relative;
+    opacity: 0;
+}
+
+#showcase{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #202020;
+}
+
+#showcase-text{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#showcase-text > h3{
+    color: #fff;
+    font-weight: 100;
+    font-size: 7rem;
+    letter-spacing: -1rem;
+    word-spacing: -1rem;
+}
+
+#extra-text{
+    color: #646463;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+#date-text{
+    color: #fff;
+    font-weight: 100;
+    font-size: 10rem;
+    letter-spacing: 0.3rem;
+}
+
+.space{
+    height: 3rem;
+}
+
+.line{
+    height: 4px;
+    width: 2rem;
+    background-color: #73433b;
+}
+
+#contact{
+    font-size: 3rem;
+    color: #646463;
+    font-weight: 100;
 }
