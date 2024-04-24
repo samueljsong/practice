@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: monument;
+    src: url(../font/MonumentExtended-Regular.woff2);
+    src: url(../font/MonumentExtended-Ultrabold.woff2);
+}
+
+body{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    height: 200vh;
+    width: 100%;
+}
+
+.hero-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container > h1 {
+    font-family: monument;
+    font-size: 8vw;
+}
+
+.outline{
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 4px;
+    color: transparent;
+    position: absolute;
+    opacity: 0;
+}
+
+.information-section{
+    height: 100vh   ;
+}
+
+#t2{
+    position: absolute;
+}
+
+#moon{
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(100%);
+    filter: opacity(50%);
+}
+
+
