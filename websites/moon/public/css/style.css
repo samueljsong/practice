@@ -15,6 +15,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -44,10 +45,6 @@ body{
     opacity: 0;
 }
 
-.information-section{
-    height: 100vh   ;
-}
-
 #t2{
     position: absolute;
 }
@@ -60,4 +57,25 @@ body{
     filter: opacity(50%);
 }
 
+.information{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+}
 
+.information-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* overflow-x: hidden; */
+}
+
+.text-content{
+    white-space: nowrap;
+}
+
+.information-container > p{
+    font-size: 7vw;
+    font-family: monument;
+}
