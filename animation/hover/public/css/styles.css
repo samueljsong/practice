@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: fontspring;
+    src: url(../font/Fontspring-DEMO-proximanovacond-semibold.otf);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: fontspring;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item{
+    width: 100%;
+}
+
+p{
+    position: absolute;
+    width: 8vw;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    transition: color 0.25s;
+}
+
+.name{
+    position: relative;
+    overflow: hidden;
+    flex: 4;
+    height: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+
