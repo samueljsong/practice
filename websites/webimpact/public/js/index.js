@@ -1,3 +1,5 @@
+let screenPosition = 0;
+
 document.addEventListener("DOMContentLoaded", () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -46,6 +48,32 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 2,
         ease: "power2.out"
     }, 1)
+
+    window.addEventListener('scroll', () => {
+        let scrollingDown = false;
+
+        if(window.pageYOffset > screenPosition){
+            scrollingDown = true;
+            screenPosition = window.pageYOffset;
+        }else{
+            scrollingDown = false;
+            screenPosition = window.pageYOffset;
+        }
+
+        if(scrollingDown){
+            t1.to('nav', {
+                opacity: 0,
+                duration: 0.5,
+                ease: "power2.out"
+            })
+        }else{
+            t1.to('nav', {
+                opacity: 1,
+                duration: 0.5,
+                ease: 'power2.out'
+            })
+        }
+    })
 
 })
 

@@ -20,7 +20,7 @@ body{
 }
 
 nav{
-    position: absolute;
+    position: fixed ;
     height: 4rem;
     width: 40%;
     background-color: #181818;
@@ -58,6 +58,24 @@ a{
     color: white;
     font-size: 0.8rem;
     word-spacing: 0.5rem;
+}
+
+.logo{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.contact-btn{
+    height: 2rem;
+    border: solid 1px white;
+    display: grid;
+    place-items: center;
+    padding: 0 1rem 0 1rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 3%;
+    top: 3%;
 }
 
 .hero{
@@ -126,4 +144,10 @@ a{
     place-items: center;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+.aboutus{
+    height: 100vh;
+    width: 100%;
 }
