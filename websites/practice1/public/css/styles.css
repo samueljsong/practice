@@ -18,6 +18,11 @@
     src: url(../font/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: poppins-elight;
+    src: url(../font/Poppins-ExtraLight.ttf);
+}
+
 body{
     height: auto;
     width: 100%;
@@ -28,33 +33,150 @@ body{
 h1{
     margin: 0;
     padding: 0;
+    font-family: poppins-elight;
+}
+
+nav{
+    position: fixed;
+    font-family: poppins-med;
+    height: 3vw;
+    background-color: #f2f7f1;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0.3px 0.3px rgb(0 0 0 / 0.2);
+    width: 38vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3%;
+    opacity: 1;
+}
+
+nav > ul{
+    display: flex;
+    gap: 2.5vw;
+}
+
+nav > ul > li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.logo{
+    position: absolute;
+    display: flex;
+    gap: 0.2vw;
+    align-items: center;
+    height: 3vw;
+    width: 10vw;
+    top: 3%;
+    left: 3%;
+}
+
+.logo > p{
+    font-family: poppins-med;
+    font-size: 1.1vw;
+}
+
+.logo > img{
+    width: 1.5vw;
+}
+
+.consultation{
+    position: absolute;
+    display: flex;
+    width: 11vw;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.3vw 0 0.3vw;
+    background-color: #f2f7f1;
+    border-radius: 50px;
+    /* box-shadow: 0 0.3px 0.3px rgb(0 0 0 / 0.2); */
+    top: 3%;
+    right: 10%;
+}
+
+.consultation > p{
+    font-family: poppins-med;
+    font-size: 1vw;
+    word-spacing: 0.8;
+}
+
+.phone-logo{
+    height: 2.5vw;
+    width: 2.5vw;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.phone-logo > img{
+    width: 1vw;
+}
+
+.message,
+.menu{
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.message > img,
+.menu > img{
+    width: 1.3vw;
+}
+
+.message{
+    right: 6.5%;
+    top: 3%;
+}
+
+.menu{
+    right: 3%;
+    top: 3%;
 }
 
 .hero{
-    background-color: #eef3ec;
+    background-color: #ebf0e9;
     height: 100vh;
     width: 100%;
     display: grid;
 }
 
-/* this needs width and position relative
-   to make the position changes for each child span to work. */
-.heading{
-    font-family: poppins-light;
-    font-size: 4vw;
-    position: relative;
+.heading-container{
+    height: auto;
     width: 100%;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
 }
 
-.heading > span{
-    margin: 0;
-    padding: 0;
+.text-wrapper > h1{
+    font-size: 4vw;
     opacity: 0;
-    display: grid;
-    width: auto;
-    position: absolute;
 }
+
+.firstsection{
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.secondsection{
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    justify-content: center;
+}
+
+
