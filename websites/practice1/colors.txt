@@ -1,0 +1,5 @@
+solid pink = #febebe
+light pink = #fff1f0
+background on landing = #eef3ec
+background everywhere else = white
+text = black

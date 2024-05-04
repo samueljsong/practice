@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poppins-med;
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background-color: #eef3ec;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+}
+
+/* this needs width and position relative
+   to make the position changes for each child span to work. */
+.heading{
+    font-family: poppins-light;
+    font-size: 4vw;
+    position: relative;
+    width: 100%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.heading > span{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    display: grid;
+    width: auto;
+    position: absolute;
+}
